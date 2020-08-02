@@ -20,6 +20,8 @@ executable state
   build-depends:       base >= 4.7 && < 5
                      , random
                      , transformers
+                     , trifecta
   other-modules:       RandomExample
                      , RandomExample2
+                     , LearnParsers
                      , FizzBuzz

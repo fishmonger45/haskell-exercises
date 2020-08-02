@@ -27,7 +27,7 @@ instance Functor Parser where
     return $ (ys, f a)
 
 instance Applicative Parser where
-  pure a = Parser $ \_ -> Just (mempty, a)
+  pure a = Parser $ \s -> Just (s, a)
   (Parser fab) <*> (Parser fa) = Parser $ \xs -> do
      (ys, f) <- fab xs
      (zs, a) <- fa ys 
