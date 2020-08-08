@@ -21,6 +21,7 @@ executable state
                      , random
                      , transformers
                      , trifecta
+                     , parsers
   other-modules:       RandomExample
                      , RandomExample2
                      , LearnParsers
